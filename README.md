@@ -1,7 +1,7 @@
 ember-cli-randomcolor
 ==============================================================================
 
-[Short description of the addon.]
+A simple add-on for generating random colors
 
 
 Compatibility
@@ -23,7 +23,27 @@ ember install ember-cli-randomcolor
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Inject the `randomColor` service, and called the `generate()` method.
+
+```javascript
+class MyController extends Controller {
+  @service
+  randomColor;
+  
+  @tracked 
+  colors;
+  
+  @action
+  generate () {
+    this.colors = this.randomColor.generate ();
+  }
+}
+```
+
+### Advanced Usage
+
+This add-on is a wrapper for the [randomColor](https://github.com/davidmerfield/randomColor) package.
+The `generate()` method therefore takes an `options` parameter, which are the same options for `randomColor()`.
 
 
 Contributing
