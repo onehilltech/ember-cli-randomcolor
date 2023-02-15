@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-randomcolor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple add-on for generating random colors.",
   "keywords": [
     "ember-addon",
